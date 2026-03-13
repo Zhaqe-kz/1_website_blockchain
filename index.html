@@ -1,354 +1,557 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ассоциация криптоиндустрии Казахстана (АКК)</title>
-  <meta name="description" content="Ассоциация криптоиндустрии Казахстана (АКК): образование, экспертиза, диалог с государством и индустрией, развитие доверия и сообщества." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>АКК | Ассоциация финтеха, искусственного интеллекта и криптоиндустрии Казахстана</title>
+  <meta name="description" content="АКК объединяет финтех, AI и криптоиндустрию Казахстана: регулирование, образование, экспертность, запуск и масштабирование цифрового бизнеса.">
+  <meta name="theme-color" content="#233C7F">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Перейти к содержанию</a>
 
   <header class="site-header">
-    <div class="container header-grid">
-      <div class="logo">
-        <span class="logo-mark">АКК</span>
-        <div class="logo-text">
-          <span class="logo-title">Association of Crypto Industry of Kazakhstan</span>
-          <span class="logo-sub">Ассоциация криптоиндустрии Казахстана</span>
-        </div>
-      </div>
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="АКК">
+        <span class="brand-mark">АКК</span>
+        <span class="brand-copy">
+          <span class="brand-title">Ассоциация финтеха, искусственного интеллекта и криптоиндустрии Казахстана</span>
+          <span class="brand-subtitle">Association of FinTech, AI and Crypto Industry of Kazakhstan</span>
+        </span>
+      </a>
 
-      <nav class="nav" aria-label="Основное меню">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        Меню
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
         <a href="#about">О нас</a>
         <a href="#membership">Членство</a>
         <a href="#regulation">Регулирование</a>
-        <a href="#expertise">Экспертиза</a>
+        <a href="#education">Программы</a>
+        <a href="#expertise">Экспертность</a>
         <a href="#contacts">Контакты</a>
       </nav>
 
-      <div class="lang-switch" aria-label="Языки">
-        <button class="lang active" type="button">RU</button>
-        <button class="lang" type="button" aria-disabled="true">KZ</button>
-        <button class="lang" type="button" aria-disabled="true">EN</button>
+      <div class="lang-switch" aria-label="Доступные языки">
+        <button class="lang-chip active" type="button">RU</button>
+        <button class="lang-chip" type="button" aria-disabled="true">KZ</button>
+        <button class="lang-chip" type="button" aria-disabled="true">EN</button>
+        <button class="lang-chip" type="button" aria-disabled="true">CN</button>
       </div>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="container hero-grid">
-        <div class="hero-content">
-          <p class="eyebrow">Казахстан • криптоэкономика • диалог</p>
-          <h1>Будущее криптоиндустрии уже здесь — мы проводники доверия, знаний и развития.</h1>
-          <p class="lead">
-            АКК объединяет бизнес, экспертов, общество и государство, чтобы сделать криптоиндустрию
-            прозрачной, безопасной и полезной для экономики Казахстана.
+        <div class="hero-copy reveal">
+          <p class="eyebrow">FinTech • AI • Web3 • Kazakhstan</p>
+          <h1>Строим экологичную цифровую экосистему, где криптобизнес, государство и эксперты работают в одном поле доверия.</h1>
+          <p class="hero-lead">
+            АКК помогает разобраться в цифровых активах, выстроить регуляторную стратегию,
+            усилить экспертизу рынка и запустить проекты, которые соответствуют будущему Казахстана.
           </p>
           <div class="hero-actions">
-            <a class="btn primary" href="#membership">Стать участником</a>
-            <a class="btn ghost" href="#about">Узнать больше</a>
+            <a class="button button-primary" href="#membership">Вступить в ассоциацию</a>
+            <a class="button button-secondary" href="#regulation">Изучить возможности</a>
           </div>
-          <div class="hero-stats" role="list">
-            <div class="stat" role="listitem">
-              <span class="stat-value">4+</span>
-              <span class="stat-label">ключевых направления</span>
-            </div>
-            <div class="stat" role="listitem">
-              <span class="stat-value">50+</span>
-              <span class="stat-label">партнеров и экспертов</span>
-            </div>
-            <div class="stat" role="listitem">
-              <span class="stat-value">2026</span>
-              <span class="stat-label">старт активной работы</span>
-            </div>
+          <div class="hero-points">
+            <span>Диалог с регуляторами</span>
+            <span>Образование и практикумы</span>
+            <span>Сопровождение запуска и роста</span>
           </div>
         </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="orb orb-one"></div>
-          <div class="orb orb-two"></div>
-          <div class="grid-card">
-            <div class="card-title">Карта инициатив АКК</div>
-            <ul>
-              <li>Образование и стандарты</li>
-              <li>Регуляторный диалог</li>
-              <li>Пилотные проекты</li>
-              <li>Защита пользователей</li>
-            </ul>
+
+        <div class="hero-panel reveal">
+          <div class="hero-signal">
+            <p class="signal-label">Фокус АКК</p>
+            <div class="signal-grid">
+              <article>
+                <strong>RegTech</strong>
+                <span>Комплаенс, AML, KYC, KYT</span>
+              </article>
+              <article>
+                <strong>Market Access</strong>
+                <span>Лицензирование, листинг, партнерства</span>
+              </article>
+              <article>
+                <strong>Education</strong>
+                <span>Интенсивы и программы под задачи бизнеса</span>
+              </article>
+              <article>
+                <strong>Dialogue</strong>
+                <span>Рабочие группы с государством и рынком</span>
+              </article>
+            </div>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-card">
+              <strong>4 языка</strong>
+              <span>RU сейчас, KZ / EN / CN в следующем релизе</span>
+            </div>
+            <div class="stat-card">
+              <strong>6+ лет</strong>
+              <span>экспертизы в AIFC, цифровых активах и комплаенсе</span>
+            </div>
+            <div class="stat-card">
+              <strong>Full-cycle</strong>
+              <span>от идеи и модели до лицензии, запуска и публичности</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section about">
+    <section class="section section-band reveal">
+      <div class="container trust-strip">
+        <div>
+          <p class="eyebrow">Наша роль</p>
+          <h2>Будущее уже здесь, и мы проводники в новой цифровой экономике.</h2>
+        </div>
+        <p>
+          Ассоциация формирует понятную среду для компаний, экспертов, студентов и граждан,
+          которым нужна практическая навигация в криптоиндустрии Казахстана.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="about">
       <div class="container">
-        <div class="section-header">
+        <div class="section-heading reveal">
           <p class="eyebrow">О нас</p>
-          <h2>Миссия, цели и роль Ассоциации</h2>
-          <p>Мы создаем инфраструктуру доверия между рынком и государством, задаем стандарты и развиваем культуру ответственного использования криптотехнологий.</p>
+          <h2>Миссия, задачи и формат работы</h2>
+          <p>
+            Наша миссия: содействовать безопасному и устойчивому развитию цифровых технологий в Республике Казахстан
+            и создавать практическую пользу для рынка, бизнеса и государства.
+          </p>
         </div>
 
-        <div class="about-grid">
-          <div class="card">
-            <h3>Наша миссия</h3>
-            <p>Развивать криптоиндустрию Казахстана как устойчивую экосистему с понятными правилами, высоким уровнем безопасности и глобальной конкурентоспособностью.</p>
-          </div>
-          <div class="card">
+        <div class="info-grid">
+          <article class="surface-card reveal">
+            <h3>Ключевые задачи</h3>
+            <ul class="accent-list">
+              <li>Развитие цифровой и финтех-экосистемы Казахстана</li>
+              <li>Повышение компетенций госорганов и бизнеса</li>
+              <li>Внедрение международных стандартов RegTech, FinTech, AML, KYC, KYT и AI</li>
+              <li>Формирование сильной экспертной среды</li>
+            </ul>
+          </article>
+          <article class="surface-card reveal">
             <h3>С кем мы работаем</h3>
-            <p>Бизнес, инвесторы, эксперты, академическое сообщество, госорганы и международные партнеры.</p>
-          </div>
-          <div class="card">
-            <h3>Что мы делаем</h3>
-            <ul>
-              <li>Консалтинг и аналитика</li>
-              <li>Образовательные программы</li>
-              <li>Поддержка регулирования</li>
-              <li>Сопровождение пилотов</li>
+            <ul class="accent-list">
+              <li>IT и AI-компании</li>
+              <li>Финтех и платежные сервисы</li>
+              <li>Web3, blockchain и crypto-проекты</li>
+              <li>Юридические, аналитические и консалтинговые команды</li>
             </ul>
-          </div>
+          </article>
+          <article class="surface-card reveal">
+            <h3>Что делает ассоциация</h3>
+            <ul class="accent-list">
+              <li>Сопровождает запуск и масштабирование криптобизнеса</li>
+              <li>Организует образовательные и практические программы</li>
+              <li>Участвует в диалоге по регулированию</li>
+              <li>Объединяет экспертов и участников рынка</li>
+            </ul>
+          </article>
         </div>
 
-        <div class="logo-wall">
-          <h3>Участники и партнеры</h3>
-          <div class="logo-grid">
-            <div class="logo-box">Лого 1</div>
-            <div class="logo-box">Лого 2</div>
-            <div class="logo-box">Лого 3</div>
-            <div class="logo-box">Лого 4</div>
-            <div class="logo-box">Лого 5</div>
-            <div class="logo-box">Лого 6</div>
-          </div>
+        <div class="leaders-grid">
+          <article class="leader-card reveal">
+            <div class="leader-photo">Фото</div>
+            <div class="leader-body">
+              <p class="eyebrow">Председатель Ассоциации, соучредитель</p>
+              <h3>Кенжебаев Бахытжан</h3>
+              <p>
+                Эксперт по финтеху, цифровым активам и комплаенсу с опытом более 6 лет в экосистеме МФЦА.
+                Специализация: AML/KYT, регуляторная стратегия, лицензирование, токенизация активов.
+              </p>
+              <p>
+                Участвовал в разработке подходов к Закону РК о цифровых активах, работал с EBX (AIFC),
+                сопровождал проекты по листингу токенов на Binance, Bybit и OKX.
+              </p>
+              <p class="leader-note">Основатель и CEO Legal Fintech Solutions Ltd. Компания: KYT Labs.</p>
+            </div>
+          </article>
+
+          <article class="leader-card reveal">
+            <div class="leader-photo">Фото</div>
+            <div class="leader-body">
+              <p class="eyebrow">Директор по развитию, соучредитель</p>
+              <h3>Майбалаев Азамат</h3>
+              <p>
+                Профессионал в маркетинге цифровых продуктов и стратегическом развитии цифровых инициатив
+                с опытом более 15 лет в управлении проектами и бизнесом.
+              </p>
+              <p>
+                Специализируется на интеграции цифровых решений, подготовке кадров для цифровой экономики
+                и организации бизнес-процессов.
+              </p>
+              <p class="leader-note">Основатель и CEO Consult Engineering Group Limited и Digital CEG Limited.</p>
+            </div>
+          </article>
         </div>
 
-        <div class="founder">
-          <div class="founder-photo" aria-hidden="true">Фото основателя</div>
-          <div class="founder-info">
-            <h3>Основатель и лидерство</h3>
-            <p>
-              Эксперт с 10+ летним опытом в финтехе, кибербезопасности и регулировании.
-              Руководит партнерствами с государственными органами и индустрией.
-            </p>
-            <a class="btn secondary" href="#contacts">Связаться с нами</a>
+        <div class="partners-block reveal">
+          <div class="section-heading compact">
+            <p class="eyebrow">Участники</p>
+            <h3>Логотипы компаний и партнеров</h3>
+          </div>
+          <div class="logo-cloud">
+            <div>Лого компании</div>
+            <div>Лого компании</div>
+            <div>Лого компании</div>
+            <div>Лого компании</div>
+            <div>Лого компании</div>
+            <div>Лого компании</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="membership" class="section membership">
+    <section class="section section-dark" id="membership">
       <div class="container">
-        <div class="section-header">
+        <div class="section-heading reveal">
           <p class="eyebrow">Членство</p>
-          <h2>Присоединяйтесь к профессиональному сообществу</h2>
-          <p>Членство в АКК — это доступ к экспертизе, правовой поддержке и общим инициативам рынка.</p>
+          <h2>Ассоциация объединяет тех, кто строит цифровую экономику на практике.</h2>
+          <p>
+            Членство дает институциональный статус, выход к регуляторам, поддержку в комплаенсе,
+            продвижении, продажах и развитии международных партнерств.
+          </p>
         </div>
 
-        <div class="membership-grid">
-          <div class="card">
+        <div class="membership-layout">
+          <article class="surface-card reveal">
             <h3>Кто может вступить</h3>
-            <p>Компании, стартапы, образовательные учреждения, эксперты и профильные НКО.</p>
-          </div>
-          <div class="card">
-            <h3>Преимущества</h3>
-            <ul>
-              <li>Доступ к аналитике и исследованиям</li>
-              <li>Участие в рабочих группах</li>
-              <li>Правовая и регуляторная поддержка</li>
-              <li>Нетворкинг с ключевыми игроками</li>
+            <ul class="accent-list">
+              <li>IT и AI-компании</li>
+              <li>Финтех и платежные сервисы</li>
+              <li>Web3, blockchain и crypto-проекты</li>
+              <li>Консалтинговые, юридические и аналитические компании</li>
+              <li>Предприниматели и индивидуальные эксперты</li>
             </ul>
-          </div>
-          <div class="card">
-            <h3>Права и обязанности</h3>
-            <p>Участие в голосовании, соблюдение этического кодекса, вклад в стандарты и совместные проекты.</p>
+          </article>
+
+          <article class="surface-card reveal">
+            <h3>Что получает участник</h3>
+            <div class="benefit-stack">
+              <div>
+                <strong>1. Диалог с государством</strong>
+                <p>Представление интересов через консолидированный и признанный голос индустрии.</p>
+              </div>
+              <div>
+                <strong>2. Юридическое сопровождение</strong>
+                <p>Регулирование, compliance, AML, KYC, KYT, запуск и масштабирование проекта.</p>
+              </div>
+              <div>
+                <strong>3. Экспертная поддержка</strong>
+                <p>Регистрация, лицензирование, бизнес-модели, цифровые продукты, международный рост.</p>
+              </div>
+              <div>
+                <strong>4. Маркетинг и публичность</strong>
+                <p>СМИ, цифровые каналы, отраслевые мероприятия и профессиональные сообщества.</p>
+              </div>
+              <div>
+                <strong>5. Продажи и партнерства</strong>
+                <p>Нетворкинг, новые клиенты, инвестиции, выход на коммерческие и некоммерческие рынки.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="dual-grid">
+          <article class="surface-card reveal">
+            <h3>Почему с нами становятся сильнее</h3>
+            <ul class="accent-list">
+              <li>Доверие рынка и государства</li>
+              <li>Институциональный статус и узнаваемость</li>
+              <li>Защита интересов резидента</li>
+              <li>Масштабирование проекта и финансовый рост</li>
+              <li>Репутация и публичное признание</li>
+            </ul>
+          </article>
+
+          <article class="surface-card reveal">
+            <h3>Как вступить</h3>
+            <ol class="steps-list">
+              <li>Подать заявку и описать профиль проекта</li>
+              <li>Пройти консультацию с командой ассоциации</li>
+              <li>Получить индивидуальную категорию и условия участия</li>
+              <li>Подписать договор и начать работу в сообществе</li>
+            </ol>
+            <a class="text-link" href="#" aria-disabled="true">Ссылка на договор и положение о членстве</a>
+          </article>
+        </div>
+
+        <div class="surface-card reveal">
+          <h3>Формат участия и членские взносы</h3>
+          <div class="fee-table">
+            <div class="fee-row fee-head">
+              <span>Категория</span>
+              <span>Описание</span>
+              <span>Взнос</span>
+            </div>
+            <div class="fee-row">
+              <span>Категория I</span>
+              <span>Физические лица и юридические лица малого бизнеса</span>
+              <span>от 220 до 250 МРП / год</span>
+            </div>
+            <div class="fee-row">
+              <span>Категория II</span>
+              <span>Юридические лица среднего бизнеса</span>
+              <span>от 720 до 750 МРП / год</span>
+            </div>
+            <div class="fee-row">
+              <span>Категория III</span>
+              <span>Крупные юридические лица</span>
+              <span>от 1 220 до 1 250 МРП / год</span>
+            </div>
           </div>
         </div>
 
-        <div class="steps">
-          <h3>Как стать участником</h3>
-          <ol>
-            <li>Подать заявку</li>
-            <li>Пройти интервью с командой АКК</li>
-            <li>Подписать соглашение</li>
-            <li>Получить статус участника</li>
-          </ol>
-          <a class="link" href="#" aria-disabled="true">Ссылка на соглашение (Google Doc)</a>
-        </div>
-
-        <div class="logo-wall">
-          <h3>Компании с нами</h3>
-          <div class="logo-grid">
-            <div class="logo-box">Лого A</div>
-            <div class="logo-box">Лого B</div>
-            <div class="logo-box">Лого C</div>
-            <div class="logo-box">Лого D</div>
+        <div class="partners-block reveal">
+          <div class="section-heading compact">
+            <p class="eyebrow">Кто уже с нами</p>
+            <h3>Пул компаний будет добавлен после подтверждения логотипов</h3>
+          </div>
+          <div class="logo-cloud">
+            <div>Партнер</div>
+            <div>Партнер</div>
+            <div>Партнер</div>
+            <div>Партнер</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="regulation" class="section regulation">
+    <section class="section" id="regulation">
       <div class="container">
-        <div class="section-header">
-          <p class="eyebrow">Регулирование</p>
-          <h2>Диалог, стандарты и защита участников рынка</h2>
-          <p>Мы представляем интересы индустрии, работаем над законопроектами и создаем безопасную среду для пользователей.</p>
+        <div class="section-heading reveal">
+          <p class="eyebrow">Организация бизнеса и регулирование</p>
+          <h2>Казахстан как рабочая юрисдикция для криптобизнеса, цифровых активов и новых моделей финансирования.</h2>
+          <p>
+            Мы объясняем, как строить криптовалютный бизнес в правовом поле Республики Казахстан,
+            опираясь на регулирование Национального Банка РК и инфраструктуру МФЦА.
+          </p>
         </div>
 
-        <div class="regulation-grid">
-          <div class="card">
-            <h3>Лоббирование и представительство</h3>
-            <p>Системный диалог с государственными органами и международными платформами.</p>
-          </div>
-          <div class="card">
-            <h3>Участие в законотворчестве</h3>
-            <p>Экспертиза, консультации и подготовка рекомендаций для устойчивого законодательства.</p>
-          </div>
-          <div class="card">
-            <h3>Регуляторные песочницы</h3>
-            <p>Пилотные проекты совместно с государством для тестирования новых продуктов и сервисов.</p>
-          </div>
-          <div class="card">
+        <div class="reg-grid">
+          <article class="surface-card reveal">
+            <h3>Что открывает юрисдикция</h3>
+            <ul class="accent-list">
+              <li>Привлечение и структурирование инвестиций</li>
+              <li>Продажа товаров и услуг с цифровыми инструментами расчетов</li>
+              <li>Приобретение активов за криптовалюту</li>
+              <li>Токенизация собственности и выпуск NFT / security tokens</li>
+              <li>Доход на инфраструктуре крипторынка</li>
+            </ul>
+          </article>
+
+          <article class="surface-card reveal">
+            <h3>Регулируемые направления</h3>
+            <ul class="accent-list">
+              <li>Коллективное инвестирование и криптофонды</li>
+              <li>Управление активами третьих лиц и брокеридж</li>
+              <li>Криптообменные операции, биржи и обменные пункты</li>
+              <li>Эмиссия криптоактивов и структурирование ICO</li>
+            </ul>
+          </article>
+
+          <article class="surface-card reveal">
+            <h3>Как начать</h3>
+            <ol class="steps-list">
+              <li>Предварительный анализ модели и выбора юрисдикции</li>
+              <li>Получение лицензии и выполнение требований регулятора</li>
+              <li>Найм команды и постановка на налоговый учет</li>
+              <li>Внедрение AML, CDD, бухгалтерии, аудита и отчетности</li>
+            </ol>
+          </article>
+        </div>
+
+        <div class="reg-timeline reveal">
+          <article>
+            <span>01</span>
+            <h3>Лоббирование и участие в законотворчестве</h3>
+            <p>Работаем с госорганами и отраслью по проектам нормативных актов и консультациям рынка.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Песочницы и пилоты</h3>
+            <p>Поддерживаем тестирование продуктов и сервисов в рамках совместных инициатив с государством.</p>
+          </article>
+          <article>
+            <span>03</span>
             <h3>Защита потребителей</h3>
-            <ul>
-              <li>Раскрытие рисков</li>
-              <li>Защита данных</li>
-              <li>Стандарты кибербезопасности</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Налоговое регулирование</h3>
-            <ul>
-              <li>Налогообложение трейдинга, майнинга, стейкинга</li>
-              <li>Стандарты отчетности</li>
-              <li>Автоматизация и помощь бизнесу</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Законодательная база</h3>
-            <p>Ссылки на действующие законы и проекты поправок.</p>
-            <a class="link" href="#" aria-disabled="true">Перейти к документам</a>
-          </div>
+            <p>Риск-дисклеймеры, защита данных, кибербезопасность и стандарты прозрачности для пользователей.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Налоги и отчетность</h3>
+            <p>Практика по трейдингу, майнингу, стейкингу, стандартам отчетности и автоматизации процессов.</p>
+          </article>
+        </div>
+
+        <div class="surface-card reveal">
+          <h3>Практическое сопровождение АКК</h3>
+          <p>
+            Ассоциация помогает с бизнес-моделью, регистрацией компании, подбором лицензии,
+            визовой поддержкой, организацией офиса, открытием счета, аутсорсингом процессов
+            и представительством интересов в госорганах.
+          </p>
+          <a class="text-link" href="#" aria-disabled="true">Ссылки на действующие законы и проекты поправок</a>
         </div>
       </div>
     </section>
 
-    <section id="expertise" class="section expertise">
+    <section class="section section-band" id="education">
       <div class="container">
-        <div class="section-header">
-          <p class="eyebrow">Экспертиза</p>
-          <h2>Команда практиков и партнеров</h2>
-          <p>Эксперты из финтеха, права, кибербезопасности и инженерии объединены для совместных проектов.</p>
+        <div class="section-heading reveal">
+          <p class="eyebrow">Образовательные и практические программы</p>
+          <h2>Тренинги, интенсивы и прикладные программы для бизнеса, команд и институтов.</h2>
+          <p>
+            Формат программ короткий, практико-ориентированный и адаптируется под конкретную задачу заказчика.
+          </p>
+        </div>
+
+        <div class="program-grid">
+          <article class="program-card reveal">
+            <h3>Блокчейн и криптоиндустрия</h3>
+            <p>Базовые и продвинутые треки по устройству рынка, активов, инфраструктуры и моделей применения.</p>
+          </article>
+          <article class="program-card reveal">
+            <h3>FinTech и цифровые активы</h3>
+            <p>Платежные сервисы, цифровые инструменты, токенизация и новые финмодели.</p>
+          </article>
+          <article class="program-card reveal">
+            <h3>RegTech и compliance</h3>
+            <p>AML, KYC, KYT, управление рисками, проверка клиентов и операционная прозрачность.</p>
+          </article>
+          <article class="program-card reveal">
+            <h3>AI, GovTech и цифровизация</h3>
+            <p>Применение ИИ, цифровых госуслуг и автоматизации в бизнесе и институциональных процессах.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="expertise">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Экспертность</p>
+          <h2>Экспертный совет Ассоциации собирает практиков, которые умеют доводить цифровые проекты до результата.</h2>
+          <p>
+            Компетенции совета покрывают полный цикл: от стратегии и юридической структуры
+            до вывода продуктов на глобальные рынки и масштабирования технологических решений.
+          </p>
         </div>
 
         <div class="experts-grid">
-          <article class="expert-card">
-            <h3>Эксперт по регулированию</h3>
-            <p>Опыт в финрегуляторах и разработке нормативных актов.</p>
+          <article class="expert-card reveal">
+            <span>Tokenization</span>
+            <h3>Эксперты по токенизации активов и цифровым финансовым инструментам</h3>
+            <p>Формируют архитектуру выпуска, токен-модели и требования к правовой структуре.</p>
           </article>
-          <article class="expert-card">
-            <h3>Кибербезопасность</h3>
-            <p>Аудит смарт-контрактов, оценка рисков, стандарты безопасности.</p>
+          <article class="expert-card reveal">
+            <span>Crypto Market</span>
+            <h3>Профессионалы крипторынка и архитекторы blockchain-решений</h3>
+            <p>Выстраивают инфраструктуру, интеграции, доступ к биржам и операционные процессы.</p>
           </article>
-          <article class="expert-card">
-            <h3>Финансовая аналитика</h3>
-            <p>Исследования рынков, модели оценки цифровых активов.</p>
+          <article class="expert-card reveal">
+            <span>Builders</span>
+            <h3>Разработчики децентрализованных продуктов</h3>
+            <p>Проектируют сервисы, смарт-контракты и пользовательские сценарии под масштабируемый запуск.</p>
           </article>
-          <article class="expert-card">
-            <h3>Инженерия и продукт</h3>
-            <p>Архитектура платформ, масштабирование и UX-инновации.</p>
+          <article class="expert-card reveal">
+            <span>Founders</span>
+            <h3>Руководители AI, blockchain и automation-компаний</h3>
+            <p>Соединяют стратегию, продукт, маркетинг и рост на локальном и международном рынке.</p>
           </article>
+        </div>
+
+        <div class="surface-card callout reveal">
+          <h3>Ассоциация как платформа совместных инициатив</h3>
+          <p>Приглашаем к участию в образовательных программах, совместной разработке инициатив, экспертной поддержке и членстве в ассоциации.</p>
+          <a class="button button-primary" href="#contacts">Обсудить участие</a>
         </div>
       </div>
     </section>
 
-    <section id="contacts" class="section contacts">
-      <div class="container contacts-grid">
-        <div>
-          <div class="section-header">
-            <p class="eyebrow">Контакты</p>
-            <h2>Свяжитесь с АКК</h2>
-            <p>Открыты к сотрудничеству, диалогу и совместным инициативам.</p>
-          </div>
-          <div class="contact-list">
+    <section class="section section-dark" id="contacts">
+      <div class="container contact-layout">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Контакты</p>
+          <h2>Открыты для диалога с бизнесом, государством, образовательной средой и экспертами.</h2>
+          <div class="contact-stack">
             <div>
-              <span class="label">Адрес</span>
-              <p>г. Алматы, БЦ «Future Park», офис 12</p>
+              <span>Адрес</span>
+              <p>г. Астана, ул. Косшыгулулы, д. 6</p>
             </div>
             <div>
-              <span class="label">Телефон</span>
-              <p>+7 (777) 000-00-00</p>
+              <span>Телефон</span>
+              <p>+7 777 077 77 83</p>
+              <p>+7 771 222 07 07</p>
             </div>
             <div>
-              <span class="label">Email</span>
-              <p>hello@akk.kz</p>
+              <span>Email</span>
+              <p><a href="mailto:info@cryptoindustry.kz">info@cryptoindustry.kz</a></p>
             </div>
             <div>
-              <span class="label">Мессенджеры</span>
-              <p>Telegram / WhatsApp / Signal</p>
+              <span>Мессенджеры и соцсети</span>
+              <p>Telegram, WhatsApp, LinkedIn, YouTube, X</p>
             </div>
-          </div>
-          <div class="socials">
-            <a href="#" aria-disabled="true">LinkedIn</a>
-            <a href="#" aria-disabled="true">Telegram</a>
-            <a href="#" aria-disabled="true">YouTube</a>
-            <a href="#" aria-disabled="true">X / Twitter</a>
           </div>
         </div>
-        <div class="contact-card">
-          <h3>Запросить консультацию</h3>
-          <p>Оставьте заявку, и мы свяжемся для обсуждения вашего проекта.</p>
+
+        <aside class="contact-panel reveal">
+          <h3>Связаться с Ассоциацией</h3>
+          <p>Форма пока работает как интерфейсный блок. Подключение CRM или email-обработчика можно сделать следующим шагом.</p>
           <form class="contact-form">
             <label>
               Имя
-              <input type="text" name="name" placeholder="Ваше имя" />
+              <input type="text" name="name" placeholder="Ваше имя">
+            </label>
+            <label>
+              Компания
+              <input type="text" name="company" placeholder="Название компании">
             </label>
             <label>
               Email
-              <input type="email" name="email" placeholder="you@email.com" />
+              <input type="email" name="email" placeholder="name@company.com">
             </label>
             <label>
-              Сообщение
-              <textarea name="message" rows="4" placeholder="Кратко опишите запрос"></textarea>
+              Запрос
+              <textarea name="message" rows="5" placeholder="Напишите, чем может помочь АКК"></textarea>
             </label>
-            <button class="btn primary" type="submit">Отправить</button>
+            <button class="button button-primary" type="submit">Отправить запрос</button>
           </form>
-          <p class="note">Форма пока не подключена — добавим после согласования CRM.</p>
-        </div>
+        </aside>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
+    <div class="container footer-inner">
       <div>
-        <div class="logo small">
-          <span class="logo-mark">АКК</span>
-          <div class="logo-text">
-            <span class="logo-title">Association of Crypto Industry of Kazakhstan</span>
-            <span class="logo-sub">Ассоциация криптоиндустрии Казахстана</span>
-          </div>
-        </div>
-        <p class="footer-mission">Мы формируем ответственную криптоэкономику Казахстана через диалог, экспертизу и стандарты.</p>
+        <p class="footer-mark">АКК</p>
+        <p class="footer-text">Ассоциация формирует ответственную и понятную цифровую экономику Казахстана через диалог, экспертизу, образование и практические решения.</p>
       </div>
-      <div class="footer-links">
+      <nav class="footer-nav" aria-label="Навигация в подвале">
         <a href="#about">О нас</a>
         <a href="#membership">Членство</a>
         <a href="#regulation">Регулирование</a>
-        <a href="#expertise">Экспертиза</a>
+        <a href="#education">Программы</a>
+        <a href="#expertise">Экспертность</a>
         <a href="#contacts">Контакты</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="mailto:info@cryptoindustry.kz">info@cryptoindustry.kz</a>
+        <span>© 2026 АКК</span>
       </div>
-      <div class="footer-socials">
-        <span class="label">Соцсети</span>
-        <a href="#" aria-disabled="true">LinkedIn</a>
-        <a href="#" aria-disabled="true">Telegram</a>
-        <a href="#" aria-disabled="true">YouTube</a>
-      </div>
-    </div>
-    <div class="container copyright">
-      <span>© 2026 АКК. Все права защищены.</span>
     </div>
   </footer>
 
