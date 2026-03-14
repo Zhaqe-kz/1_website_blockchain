@@ -245,13 +245,13 @@ button {
 
 .hero-main {
   display: grid;
-  grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
-  gap: 24px;
-  align-items: stretch;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 390px);
+  gap: 28px;
+  align-items: start;
 }
 
 .hero-copy {
-  padding: clamp(12px, 2vw, 18px) clamp(4px, 1vw, 8px) clamp(18px, 2vw, 24px) 0;
+  padding: 10px 8px 18px 0;
   border: 0;
   box-shadow: none;
   background: transparent;
@@ -275,8 +275,8 @@ h3 {
 }
 
 h1 {
-  max-width: 12ch;
-  font-size: clamp(2.8rem, 4.8vw, 5rem);
+  max-width: 10.5ch;
+  font-size: clamp(2.5rem, 4.1vw, 4.2rem);
   margin-bottom: 18px;
   font-weight: 800;
   letter-spacing: -0.05em;
@@ -305,8 +305,8 @@ h3 {
 }
 
 .hero-lead {
-  max-width: 60ch;
-  font-size: 1.06rem;
+  max-width: 56ch;
+  font-size: 1rem;
 }
 
 .hero-actions {
@@ -366,6 +366,7 @@ h3 {
   display: grid;
   gap: 14px;
   padding: 18px;
+  align-self: start;
   background:
     radial-gradient(circle at 0% 0%, rgba(77, 196, 253, 0.22), transparent 28%),
     linear-gradient(160deg, #0a1530 0%, #122351 62%, #17306d 100%);
@@ -387,9 +388,13 @@ h3 {
   gap: 12px;
 }
 
+.hero-metrics {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .proof-list article,
 .metric-card {
-  padding: 16px;
+  padding: 14px;
   border-radius: var(--radius-sm);
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: rgba(255, 255, 255, 0.08);
@@ -405,7 +410,7 @@ h3 {
 .metric-card span {
   display: block;
   color: rgba(239, 245, 255, 0.72);
-  font-size: 0.92rem;
+  font-size: 0.88rem;
 }
 
 .hero-focus {
@@ -456,12 +461,37 @@ h3 {
 
 .trust-strip {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.72fr);
+  grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.52fr);
   gap: 24px;
   padding: 28px 32px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: linear-gradient(120deg, rgba(35, 60, 127, 0.04), rgba(77, 196, 253, 0.14));
+}
+
+.trust-copy h2 {
+  max-width: 14ch;
+  font-size: clamp(2rem, 3.2vw, 3.1rem);
+  margin-bottom: 0;
+}
+
+.trust-note {
+  align-self: center;
+  padding: 22px 24px;
+  border: 1px solid rgba(35, 60, 127, 0.1);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.trust-note p {
+  font-size: 1.04rem;
+  color: var(--text);
+}
+
+.trust-note span {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--muted);
 }
 
 .section-heading {
@@ -839,6 +869,10 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .hero-metrics {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .dual-grid,
   .footer-inner {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -907,6 +941,10 @@ h3 {
 
   .hero-shell {
     padding: 22px;
+  }
+
+  .hero-metrics {
+    grid-template-columns: 1fr;
   }
 }
 
