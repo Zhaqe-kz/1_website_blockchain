@@ -237,8 +237,9 @@ button {
 
 .hero-shell {
   width: 100%;
+  max-width: var(--max);
   padding: clamp(24px, 3vw, 32px);
-  margin: 0;
+  margin: 0 auto;
   background:
     linear-gradient(145deg, rgba(255, 255, 255, 0.92), rgba(233, 243, 255, 0.84)),
     linear-gradient(120deg, rgba(77, 196, 253, 0.08), transparent 40%);
