@@ -415,6 +415,11 @@ h3 {
 .why-shell {
   display: grid;
   gap: 20px;
+  padding: 28px 32px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.92), rgba(233, 243, 255, 0.84));
+  box-shadow: var(--shadow);
 }
 
 .why-intro {
@@ -961,6 +966,10 @@ h3 {
   }
 
   .hero-shell {
+    padding: 22px;
+  }
+
+  .why-shell {
     padding: 22px;
   }
 
