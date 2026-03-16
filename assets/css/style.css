@@ -244,13 +244,13 @@ button {
 
 .hero-main {
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 0;
-  align-items: start;
+  grid-template-columns: minmax(0, 0.96fr) minmax(340px, 0.84fr);
+  gap: 34px;
+  align-items: center;
 }
 
 .hero-copy {
-  padding: 10px 8px 18px 0;
+  padding: 10px 0 18px;
   border: 0;
   box-shadow: none;
   background: transparent;
@@ -274,8 +274,8 @@ h3 {
 }
 
 h1 {
-  max-width: 10.5ch;
-  font-size: clamp(2.5rem, 4.1vw, 4.2rem);
+  max-width: 9.6ch;
+  font-size: clamp(2.4rem, 4vw, 4.35rem);
   margin-bottom: 18px;
   font-weight: 800;
   letter-spacing: -0.05em;
@@ -304,8 +304,8 @@ h3 {
 }
 
 .hero-lead {
-  max-width: 56ch;
-  font-size: 1rem;
+  max-width: 52ch;
+  font-size: 1.02rem;
 }
 
 .hero-actions {
@@ -359,6 +359,59 @@ h3 {
   font-size: 0.84rem;
   font-weight: 700;
   color: var(--primary);
+}
+
+.hero-panel {
+  padding: 26px;
+  border: 1px solid rgba(35, 60, 127, 0.12);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(226, 238, 255, 0.92)),
+    linear-gradient(180deg, rgba(77, 196, 253, 0.08), transparent);
+  box-shadow: var(--shadow);
+}
+
+.hero-panel h2 {
+  max-width: 12ch;
+  font-size: clamp(1.55rem, 2.3vw, 2.25rem);
+  margin-bottom: 18px;
+}
+
+.hero-benefits {
+  display: grid;
+  gap: 12px;
+}
+
+.hero-benefits article {
+  padding: 16px 18px;
+  border: 1px solid rgba(35, 60, 127, 0.1);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.hero-benefits strong,
+.hero-strip strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--primary);
+}
+
+.hero-benefits span,
+.hero-strip span {
+  color: var(--muted);
+}
+
+.hero-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.hero-strip div {
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  background: rgba(35, 60, 127, 0.06);
 }
 
 .hero-focus {
@@ -872,6 +925,10 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .hero-panel h2 {
+    max-width: none;
+  }
+
   .why-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -945,6 +1002,10 @@ h3 {
   .hero-shell {
     padding: 22px;
   }
+
+  .hero-strip {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 560px) {
@@ -968,7 +1029,7 @@ h3 {
 
   h1 {
     max-width: none;
-    font-size: 2.3rem;
+    font-size: 2.15rem;
   }
 
   h2 {
